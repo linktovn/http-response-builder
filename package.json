@@ -1,0 +1,55 @@
+{
+  "name": "@linkto/http-response-builder",
+  "version": "1.0.0",
+  "description": "A TypeScript library for building consistent HTTP responses with support for custom status codes",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "lint": "eslint . --ext .ts",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
+  },
+  "keywords": [
+    "http",
+    "response",
+    "builder",
+    "typescript",
+    "api",
+    "rest",
+    "express",
+    "nestjs"
+  ],
+  "author": "LinktoVN",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/linktovn/http-response-builder.git"
+  },
+  "bugs": {
+    "url": "https://github.com/linktovn/http-response-builder/issues"
+  },
+  "homepage": "https://github.com/linktovn/http-response-builder#readme",
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.11.19",
+    "@typescript-eslint/eslint-plugin": "^7.0.1",
+    "@typescript-eslint/parser": "^7.0.1",
+    "eslint": "^8.56.0",
+    "jest": "^29.7.0",
+    "prettier": "^3.2.5",
+    "ts-jest": "^29.1.2",
+    "typescript": "^5.3.3"
+  },
+  "files": [
+    "dist/**/*"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}
