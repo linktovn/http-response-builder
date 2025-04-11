@@ -14,9 +14,9 @@ A TypeScript library for building consistent HTTP responses with support for cus
 ## Installation
 
 ```bash
-npm install @linkto/http-response-builder
+npm install @ltvn/http-response-builder
 # or
-yarn add @linkto/http-response-builder
+yarn add @ltvn/http-response-builder
 ```
 
 ## Usage
@@ -24,7 +24,7 @@ yarn add @linkto/http-response-builder
 ### Basic Usage
 
 ```typescript
-import { HttpResponseBuilder, HttpStatusCode, HttpStatusMessage } from '@linkto/http-response-builder';
+import { HttpResponseBuilder } from '@ltvn/http-response-builder';
 
 // Create a success response
 const response = HttpResponseBuilder
@@ -43,7 +43,7 @@ const response = HttpResponseBuilder
 ### With Pagination
 
 ```typescript
-import { HttpResponseBuilder, Paging } from '@linkto/http-response-builder';
+import { HttpResponseBuilder, Paging } from '@ltvn/http-response-builder';
 
 const response = HttpResponseBuilder
     .ok()
@@ -88,48 +88,15 @@ const response = HttpResponseBuilder
 // }
 ```
 
-## Adding Custom Status Codes
+### Custom Response
 
-To add custom status codes, you need to update the `HttpStatusCode` and `HttpStatusMessage` enums in the source code:
-
-1. Open `src/index.ts`
-2. Add your custom status code to `HttpStatusCode` enum:
 ```typescript
-export enum HttpStatusCode {
-    // ... existing codes ...
-    
-    // Custom Status Codes
-    YOUR_CUSTOM_CODE = 5000, // Use numbers >= 4000 for custom codes
-}
-```
-
-3. Add corresponding message to `HttpStatusMessage` enum:
-```typescript
-export enum HttpStatusMessage {
-    // ... existing messages ...
-    
-    // Custom Status Messages
-    YOUR_CUSTOM_CODE = "Your custom message",
-}
-```
-
-4. Update the mapping in `getHttpStatusMessage` function:
-```typescript
-export function getHttpStatusMessage(code: HttpStatusCode): HttpStatusMessage | undefined {
-    const mapping: Record<HttpStatusCode, HttpStatusMessage> = {
-        // ... existing mappings ...
-        
-        [HttpStatusCode.YOUR_CUSTOM_CODE]: HttpStatusMessage.YOUR_CUSTOM_CODE,
-    };
-    return mapping[code];
-}
-```
-
-5. After making changes, rebuild and publish the package:
-```bash
-npm run build
-npm version patch  # or minor/major depending on changes
-npm publish
+const response = HttpResponseBuilder
+    .customResponse()
+    .setStatus(418)  // I'm a teapot
+    .setMessage("Custom message")
+    .setData({ message: "Hello World" })
+    .build();
 ```
 
 ## Response Format
@@ -176,7 +143,7 @@ All responses follow this format:
 
 ```typescript
 import { Controller, Get } from '@nestjs/common';
-import { HttpResponseBuilder, Paging } from '@linkto/http-response-builder';
+import { HttpResponseBuilder, Paging } from '@ltvn/http-response-builder';
 
 interface UserDTO {
   id: number;
@@ -187,7 +154,7 @@ interface UserDTO {
 @Controller('users')
 export class UsersController {
   @Get()
-  async getUsers(): Response<UserDTO[]> {
+  async getUsers() {
     const users: UserDTO[] = [
       { id: 1, name: 'John Doe', email: 'john@example.com' },
       { id: 2, name: 'Jane Doe', email: 'jane@example.com' }
@@ -204,7 +171,7 @@ export class UsersController {
   }
 
   @Get(':id')
-  async getUser(): Response<UserDTO> {
+  async getUser() {
     const user: UserDTO = { 
       id: 1, 
       name: 'John Doe', 
@@ -224,99 +191,55 @@ export class UsersController {
 
 ```typescript
 import express from "express";
+import { HttpResponseBuilder } from "@ltvn/http-response-builder";
+
 const app = express();
-import { HttpResponseBuilder, Paging, Response } from "@linkto/http-response-builder";
 
-var server = app.listen(3000, function () {
-  console.log("Node.js is listening to PORT:" + server.address().port);
+app.get("/api/photo/list", function (req, res) {
+  const photoList = [
+    {
+      id: "001",
+      name: "photo001.jpg",
+      type: "jpg",
+      dataUrl: "http://localhost:3000/data/photo001.jpg",
+    },
+    {
+      id: "002",
+      name: "photo002.jpg",
+      type: "jpg",
+      dataUrl: "http://localhost:3000/data/photo002.jpg",
+    },
+  ];
+
+  const response = HttpResponseBuilder.ok()
+    .setData(photoList)
+    .setMessage("Get photo list")
+    .build();
+    
+  res.json(response);
 });
 
-var photoList = [
-  {
-    id: "001",
-    name: "photo001.jpg",
-    type: "jpg",
-    dataUrl: "http://localhost:3000/data/photo001.jpg",
-  },
-  {
-    id: "002",
-    name: "photo002.jpg",
-    type: "jpg",
-    dataUrl: "http://localhost:3000/data/photo002.jpg",
-  },
-];
-
-app.get("/api/photo/list", function (req, res, next) {
-  const results = HttpResponseBuilder.ok().setData(photoList).setMessage("Get photo list");
-  res.json(results);
+const server = app.listen(3000, () => {
+  console.log("Server is running on port 3000");
 });
-```
-
-## Pagination Support
-
-The `Paging` class provides pagination functionality:
-
-```typescript
-const paging = new Paging(1, 10, 100);  // page 1, 10 items per page, 100 total items
-const response = HttpResponseBuilder.ok<UserDTO[]>()
-    .setData(users)
-    .setPaging(paging)
-    .build();
-```
-
-## Metadata Support
-
-You can include additional metadata in your response:
-
-```typescript
-const metadata = {
-    timestamp: new Date(),
-    version: '1.0.0'
-};
-
-const response = HttpResponseBuilder.ok<UserDTO>()
-    .setData(user)
-    .setMetadata(metadata)
-    .build();
-```
-
-## Predefined Status Codes
-
-The builder includes methods for common HTTP status codes:
-
-- `HttpResponseBuilder.ok()`
-- `HttpResponseBuilder.created()`
-- `HttpResponseBuilder.badRequest()`
-- `HttpResponseBuilder.unauthorized()`
-- `HttpResponseBuilder.forbidden()`
-- `HttpResponseBuilder.notFound()`
-- `HttpResponseBuilder.internalServerError()`
-  And many more...
-
-## Custom Response
-
-You can create a custom response with any status code:
-
-```typescript
-const response = HttpResponseBuilder.customResponse<UserDTO>()
-    .setStatus(418)  // I'm a teapot
-    .setMessage("Custom message")
-    .setData(user)
-    .build();
 ```
 
 ## Error Handling
 
 The builder includes validation and will throw TypeError for invalid inputs:
 
-- Invalid status codes (must be between 100 and 599)
+- Invalid status codes (must be between 100 and 599, or >= 4000 for custom codes)
 - Invalid message types (must be string)
 - Invalid paging instance
-- Invalid metadata type (must be object)
+- Invalid metadata type (must be a non-null object)
 
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
+
+## References
+
+This project was inspired by and built upon the work of [@anot/http-response-builder](https://www.npmjs.com/package/@anot/http-response-builder). We would like to acknowledge their contribution to the open-source community.
 
 ## License
 
