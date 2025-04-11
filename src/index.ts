@@ -233,17 +233,16 @@ export class HttpResponseBuilder<T> {
     }
 
     setStatus(status: number | undefined) {
-
         if(typeof status === "undefined"){
             return this;
         }
 
         if (typeof status === 'number') {
-            if(status >= 100 && status <= 599){
+            if((status >= 100 && status <= 599) || status >= 4000){
                 this.status = status;
                 return this;
             }else{
-                throw new TypeError('Invalid status: Status code must be between 100 and 599');
+                throw new TypeError('Invalid status: Status code must be between 100 and 599, or >= 4000 for custom codes');
             }
         }
 
