@@ -137,4 +137,51 @@ describe('HttpResponseBuilder', () => {
       });
     });
   });
+
+
+  it('should handle any object data type', () => {
+    const anyData = {
+        name: "Test",
+        age: 30,
+        items: [1, 2, 3],
+        nested: {
+            field1: "value1",
+            field2: 123
+        },
+        isActive: true
+    };
+
+    const response = HttpResponseBuilder.ok()
+        .setData(anyData)
+        .build();
+
+    console.log('Handle any object data type:', JSON.stringify(response, null, 2));
+    expect(response.toJSON()).toEqual({
+        status: HttpStatusCode.OK,
+        message: HttpStatusMessage.OK,
+        data: anyData
+    });
+});
+
+it('should handle pagination data without type definition', () => {
+    const paginationData = {
+        data: [
+            { id: 1, name: "Item 1" },
+            { id: 2, name: "Item 2" }
+        ],
+        total: 2,
+        next: false,
+        totalPage: 1
+    };
+
+    const response = HttpResponseBuilder.ok()
+        .setData(paginationData)
+        .build();
+
+    expect(response.toJSON()).toEqual({
+        status: HttpStatusCode.OK,
+        message: HttpStatusMessage.OK,
+        data: paginationData
+    });
+});
 }); 

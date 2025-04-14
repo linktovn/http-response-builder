@@ -112,6 +112,9 @@ export class HttpResponseBuilder<T> {
     static ok<T = never>() {
         return new HttpResponseBuilder<T>(HttpStatusCode.OK, HttpStatusMessage.OK);
     }
+    static success<T = never>() {
+        return new HttpResponseBuilder<T>(HttpStatusCode.SUCCESS, HttpStatusMessage.SUCCESS);
+    }
 
     static created<T = never>() {
         return new HttpResponseBuilder<T>(HttpStatusCode.CREATED, HttpStatusMessage.CREATED);
