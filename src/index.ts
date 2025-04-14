@@ -369,6 +369,12 @@ export enum HttpStatusCode {
     EMAIL_TIMEOUT = 4006,
     AUTHEN_NOT_MATCH = 4007,
     INVALID_EMAIL = 4008,
+    NO_DATA_EXISTS = 4013,
+    FAIL = 4100,
+    TOKEN_EXPIRED = 4300,
+    BUSSINED_INFO_ERROR = 4101,
+    PLEASE_TRY_AGAIN_LATER = 4102,
+    SMS_OTP_FAILD = 5100,
 }
 
 export enum HttpStatusMessage {
@@ -448,6 +454,12 @@ export enum HttpStatusMessage {
     EMAIL_TIMEOUT = "email authentication is time out",
     AUTHEN_NOT_MATCH = "The authentication code does not match.",
     INVALID_EMAIL = "Invalid email format",
+    TOKEN_EXPIRED = 'Token expired',
+    BUSSINED_INFO_ERROR = `Vui lòng kiểm tra số đăng ký kinh doanh của bạn.`,
+    PLEASE_TRY_AGAIN_LATER = `Vui lòng thử lại sau`,
+    NO_DATA_EXISTS = 'No data exists',
+    FAIL = 'Fail',
+    SMS_OTP_FAILD = 'SMS OTP failed',
 }
 
 export function getHttpStatusMessage(code: HttpStatusCode): HttpStatusMessage | undefined {
@@ -522,6 +534,12 @@ export function getHttpStatusMessage(code: HttpStatusCode): HttpStatusMessage | 
         [HttpStatusCode.EMAIL_TIMEOUT]: HttpStatusMessage.EMAIL_TIMEOUT,
         [HttpStatusCode.AUTHEN_NOT_MATCH]: HttpStatusMessage.AUTHEN_NOT_MATCH,
         [HttpStatusCode.INVALID_EMAIL]: HttpStatusMessage.INVALID_EMAIL,
+        [HttpStatusCode.NO_DATA_EXISTS]: HttpStatusMessage.NO_DATA_EXISTS,
+        [HttpStatusCode.FAIL]: HttpStatusMessage.FAIL,
+        [HttpStatusCode.TOKEN_EXPIRED]: HttpStatusMessage.TOKEN_EXPIRED,
+        [HttpStatusCode.BUSSINED_INFO_ERROR]: HttpStatusMessage.BUSSINED_INFO_ERROR,
+        [HttpStatusCode.PLEASE_TRY_AGAIN_LATER]: HttpStatusMessage.PLEASE_TRY_AGAIN_LATER,
+        [HttpStatusCode.SMS_OTP_FAILD]: HttpStatusMessage.SMS_OTP_FAILD,
     };
 
     return mapping[code];
