@@ -56,7 +56,7 @@ export class Paging {
 export class Response<T> {
     private status?: number;
     private message?: string;
-    private data?: T;
+    private data?: T | any;
     private paging?: Paging;
     private metadata?: Record<string, any>;
 
@@ -84,7 +84,7 @@ export class Response<T> {
 export class HttpResponseBuilder<T> {
     private status?: number;
     private message?: string;
-    private data?: T;
+    private data?: T | any;
     private paging?: Paging;
     private metadata?: Record<string, any>;
 
@@ -93,7 +93,7 @@ export class HttpResponseBuilder<T> {
         this.setMessage(message)
     }
 
-    static customResponse<T = never>() {
+    static customResponse<T = any>() {
         return new HttpResponseBuilder<T>();
     }
 
@@ -214,7 +214,7 @@ export class HttpResponseBuilder<T> {
         return new HttpResponseBuilder<T>(HttpStatusCode.GATEWAY_TIMEOUT, HttpStatusMessage.GATEWAY_TIMEOUT);
     }
 
-    setData(data: T) {
+    setData(data: T | any) {
         this.data = data;
         return this;
     }
@@ -289,7 +289,7 @@ export class HttpResponseBuilder<T> {
         return this.message;
     }
 
-    getData(): T | undefined {
+    getData(): T | any | undefined {
         return this.data;
     }
 
