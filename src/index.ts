@@ -268,6 +268,12 @@ export class HttpResponseBuilder<T> {
     }
 
     build(): Response<T> {
+        if (!this.message && this.status) {
+            const statusMessage = getHttpStatusMessage(this.status as HttpStatusCode);
+            if (statusMessage) {
+                this.message = statusMessage;
+            }
+        }
         return new Response(this);
     }
 
