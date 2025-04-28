@@ -1,3 +1,8 @@
+/**
+ * Enum representing HTTP status codes.
+ * 
+ * This enum includes standard HTTP status codes as well as custom application-specific codes.
+ */
 export enum HttpStatusCode {
     // 1xx: Information
     CONTINUE = 100,
@@ -123,9 +128,10 @@ export enum HttpStatusCode {
     
     LT_CONFLICT = 409000,
     LT_CONFLICT_USER = 409001,
+    /** Bạn không thể tạo yêu cầu tìm nguồn cung*/
     LT_CONFLICT_SOURCING_REQUEST= 409002,
-    LT_CONFLICT_MATCHING_CONTRACT_DEAL = 409003,
-
+    /** Bạn không thể tạo yêu cầu sản phẩm ứng vì sản phẩm đã được bán */
+    LT_CONFLICT_MATCHING_CONTRACT_DEAL = 409003, 
   
 }
 
