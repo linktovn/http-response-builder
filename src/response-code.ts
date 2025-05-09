@@ -115,32 +115,39 @@ export enum HttpStatusCode {
     
 
     LT_BADREQUEST = 400000,
+    /**Sai dữ liệu user */
     LT_BADREQUEST_USER = 400001,
+    /**Sai dữ liệu yêu cầu */
     LT_BADREQUEST_SOURCING_REQUEST = 400002,
+    /**Sai dữ liệu sản phẩm contract */
     LT_BADREQUEST_MATCHING_CONTRACT_DEAL = 400003,
-    LT_BADREQUEST_LIMIT= 400004,
-    LT_BADREQUEST_CATEGORY= 400005,
-    LT_BADREQUEST_PRODUCT= 400006,
+    /**Sai dữ liệu giới hạn */
+    LT_BADREQUEST_LIMIT = 400004,
+    /**Sai dữ liệu danh mục */
+    LT_BADREQUEST_CATEGORY = 400005,
+    /**Sai dữ liệu sản phẩm */
+    LT_BADREQUEST_PRODUCT = 400006,
 
-    // error LT 404 + errorCODE  ex 001
     LT_NOTFOUND = 404000,
+    /**Không tìm thấy user*/
     LT_NOTFOUND_USER = 404001,
+    /**Không tìm thấy yêu cầu*/
     LT_NOTFOUND_SOURCING_REQUEST = 404002,
+    /**Không tìm thấy sản phẩm contract*/
     LT_NOTFOUND_MATCHING_CONTRACT_DEAL = 404003,
     /** Không tìm thấy danh mục */
     LT_NOTFOUND_CATEGORY = 404003,
     /** Không tìm thấy sản phẩm */
     LT_NOTFOUND_PRODUCT = 404004,
-    
-
-
+   
     LT_CONFLICT = 409000,
+    /**User đã tồn tại*/
     LT_CONFLICT_USER = 409001,
-    /** Bạn không thể tạo yêu cầu tìm nguồn cung*/
-    LT_CONFLICT_SOURCING_REQUEST= 409002,
+    /**Bạn đã tạo yêu cầu*/
+    LT_CONFLICT_SOURCING_REQUEST = 409002,
     /** Bạn không thể tạo yêu cầu sản phẩm ứng vì sản phẩm đã được bán */
-    LT_CONFLICT_MATCHING_CONTRACT_DEAL = 409003, 
-  
+    LT_CONFLICT_MATCHING_CONTRACT_DEAL = 409003
+
 }
 
 export function getEnumKeyByValue<T extends { [key: string]: any }>(

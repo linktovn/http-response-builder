@@ -1,6 +1,6 @@
 {
   "name": "@ltvn/http-response-builder",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "A TypeScript library for building consistent HTTP responses with support for custom status codes",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
