@@ -127,6 +127,14 @@ export enum HttpStatusCode {
     LT_BADREQUEST_CATEGORY = 400005,
     /**Sai dữ liệu sản phẩm */
     LT_BADREQUEST_PRODUCT = 400006,
+    /**Đang cập nhật dữ liệu user*/
+    LT_BADREQUEST_USER_CRAWLING = 400007,
+    /**Đang cập nhật dữ liệu sản phẩm*/
+    LT_BADREQUEST_PRODUCT_CRAWLING = 400008,
+    /**Dữ liệu sns không hợp lệ. vùi long cập nhật lại thông tin sns*/
+    LT_BADREQUEST_USER_CRAWLING_FALSE = 400009,
+
+
 
     LT_NOTFOUND = 404000,
     /**Không tìm thấy user*/
@@ -147,6 +155,7 @@ export enum HttpStatusCode {
     LT_CONFLICT_SOURCING_REQUEST = 409002,
     /** Bạn không thể tạo yêu cầu sản phẩm ứng vì sản phẩm đã được bán */
     LT_CONFLICT_MATCHING_CONTRACT_DEAL = 409003
+
 
 }
 
