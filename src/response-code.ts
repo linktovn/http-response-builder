@@ -131,9 +131,12 @@ export enum HttpStatusCode {
     LT_BADREQUEST_USER_CRAWLING = 400007,
     /**Đang cập nhật dữ liệu sản phẩm*/
     LT_BADREQUEST_PRODUCT_CRAWLING = 400008,
-    /**Dữ liệu sns không hợp lệ. vùi long cập nhật lại thông tin sns*/
+    /**Dữ liệu sns không hợp lệ. vùi long cập nhật lại thông tin sns */
     LT_BADREQUEST_USER_CRAWLING_FALSE = 400009,
-
+    /**Sourcing request đã được hoàn thành*/
+    LT_BADREQUEST_SOURCING_REQUEST_IS_COMPELED = 400010,
+    /**Sản phẩm hiện chưa có chính sách vận chuyển. Vui lòng thêm chính sách vận chuyển vào sản phẩm */
+    LT_BADREQUEST_SHIPPING_POLICY = 400011,
 
 
     LT_NOTFOUND = 404000,
@@ -147,16 +150,19 @@ export enum HttpStatusCode {
     LT_NOTFOUND_CATEGORY = 404003,
     /** Không tìm thấy sản phẩm */
     LT_NOTFOUND_PRODUCT = 404004,
-   
+    /** Không tìm thấy chính sách vận chuyển */
+    LT_NOTFOUND_SHIPPING_POLICY = 404005,
+
+    
     LT_CONFLICT = 409000,
     /**User đã tồn tại*/
     LT_CONFLICT_USER = 409001,
     /**Bạn đã tạo yêu cầu*/
     LT_CONFLICT_SOURCING_REQUEST = 409002,
-    /** Bạn không thể tạo yêu cầu sản phẩm ứng vì sản phẩm đã được bán */
+    /** Bạn không thể tạo yêu cầu sản phẩm ứng vì sản phẩm đã được bán chung */
     LT_CONFLICT_MATCHING_CONTRACT_DEAL = 409003
 
-
+    
 }
 
 export function getEnumKeyByValue<T extends { [key: string]: any }>(
