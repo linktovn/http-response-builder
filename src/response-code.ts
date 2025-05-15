@@ -146,13 +146,13 @@ export enum HttpStatusCode {
     LT_NOTFOUND_SOURCING_REQUEST = 404002,
     /**Không tìm thấy sản phẩm contract*/
     LT_NOTFOUND_MATCHING_CONTRACT_DEAL = 404003,
-    /** Không tìm thấy danh mục */
-    LT_NOTFOUND_CATEGORY = 404003,
     /** Không tìm thấy sản phẩm */
     LT_NOTFOUND_PRODUCT = 404004,
     /** Không tìm thấy chính sách vận chuyển */
     LT_NOTFOUND_SHIPPING_POLICY = 404005,
-
+    /** Không tìm thấy danh mục */
+    LT_NOTFOUND_CATEGORY = 404006,
+    
     
     LT_CONFLICT = 409000,
     /**User đã tồn tại*/
