@@ -137,6 +137,10 @@ export enum HttpStatusCode {
     LT_BADREQUEST_SOURCING_REQUEST_IS_COMPELED = 400010,
     /**Sản phẩm hiện chưa có chính sách vận chuyển. Vui lòng thêm chính sách vận chuyển vào sản phẩm */
     LT_BADREQUEST_SHIPPING_POLICY = 400011,
+    /**Đường dẫn không hợp lệ*/
+    LT_BADREQUEST_PATH_INVALID = 400012,
+    /**Địa chỉ không khả dụng. (bao gồm cả những từ bị cấm)*/
+    LT_BADREQUEST_PATH_FORBIDDEN = 400013,
 
 
     LT_NOTFOUND = 404000,
@@ -160,9 +164,12 @@ export enum HttpStatusCode {
     /**Bạn đã tạo yêu cầu*/
     LT_CONFLICT_SOURCING_REQUEST = 409002,
     /** Bạn không thể tạo yêu cầu sản phẩm ứng vì sản phẩm đã được bán chung */
-    LT_CONFLICT_MATCHING_CONTRACT_DEAL = 409003
+    LT_CONFLICT_MATCHING_CONTRACT_DEAL = 409003,
+    /**Đường dẫn không hợp lệ*/
+    LT_CONFLICT_PATH = 409004,
+    /**nickname đã tồn tại*/
+    LT_CONFLICT_NICKNAME = 409005,
 
-    
 }
 
 export function getEnumKeyByValue<T extends { [key: string]: any }>(
