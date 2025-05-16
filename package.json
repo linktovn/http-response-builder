@@ -1,11 +1,11 @@
 {
   "name": "@ltvn/http-response-builder",
-  "version": "1.0.18",
+  "version": "1.1.4",
   "description": "A TypeScript library for building consistent HTTP responses with support for custom status codes",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && npm run copy-locales",
     "test": "jest",
     "lint": "eslint . --ext .ts",
     "format": "prettier --write \"src/**/*.ts\"",
@@ -13,7 +13,8 @@
     "prepublishOnly": "npm run build",
     "preversion": "npm run lint",
     "version": "npm run format && git add -A src",
-    "postversion": "git push && git push --tags"
+    "postversion": "git push && git push --tags",
+    "copy-locales": "cp -r src/locales dist/"
   },
   "keywords": [
     "http",
@@ -48,8 +49,19 @@
     "typescript": "^5.8.3"
   },
   "files": [
-    "dist/**/*"
+    "dist/**/*",
+    "src/locales/**/*"
   ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
+    },
+    "./locales/*": {
+      "import": "./dist/locales/*",
+      "require": "./dist/locales/*"
+    }
+  },
   "publishConfig": {
     "access": "public"
   }
