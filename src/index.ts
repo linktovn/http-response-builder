@@ -17,9 +17,7 @@ export class Paging {
 
     setPage(page?: number) {
         if (page !== undefined) {
-            if (page < 0) {
-                throw new TypeError('Page number cannot be negative');
-            }
+  
             this.page = page;
         }
         return this;
@@ -27,9 +25,7 @@ export class Paging {
 
     setSize(size?: number) {
         if (size !== undefined) {
-            if (size <= 0) {
-                throw new TypeError('Page size must be greater than 0');
-            }
+ 
             this.size = size;
         }
         return this;
@@ -37,9 +33,7 @@ export class Paging {
 
     setTotal(total?: number) {
         if (total !== undefined) {
-            if (total < 0) {
-                throw new TypeError('Total count cannot be negative');
-            }
+     
             this.total = total;
         }
         return this;
