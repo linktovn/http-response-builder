@@ -1,6 +1,6 @@
 {
     "response": {
-        "codes":{
+        "codes": {
             "100": "Request is being processed.",
             "101": "Switching protocols.",
             "102": "Processing.",
@@ -93,8 +93,8 @@
             "400004": "Invalid limit data.",
             "400005": "Invalid category data.",
             "400006": "Invalid product data.",
-            "400007": "Updating user data.",
-            "400008": "Updating product data.",
+            "400007": "System is updating user data.",
+            "400008": "System is updating product data.",
             "400009": "Invalid SNS data. Please update SNS info.",
             "400010": "Sourcing request already completed.",
             "400011": "Product does not have shipping policy. Please add shipping policy.",
@@ -108,9 +108,13 @@
             "409000": "Conflict.",
             "409001": "User already exists.",
             "409002": "You have already created a request.",
-            "409003": "Cannot create request for this product as it is already on group sale."
+            "409003": "Cannot create request for this product as it is already on group sale.",
+            "409004": "Invalid path.",
+            "409005": "Nickname already exists.",
+            "400012": "Invalid path.",
+            "400013": "Address is not available (including forbidden words)."
         },
-        "messages":{
+        "messages": {
             "login-success": "Login success.",
             "login-fail": "Login failed."
         }

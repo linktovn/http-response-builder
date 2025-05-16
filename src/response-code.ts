@@ -127,7 +127,7 @@ export enum HttpStatusCode {
     LT_BADREQUEST_CATEGORY = 400005,
     /**Sai dữ liệu sản phẩm */
     LT_BADREQUEST_PRODUCT = 400006,
-    /**Đang cập nhật dữ liệu user*/
+    /**Đang cập nhật dữ liệu user,*/
     LT_BADREQUEST_USER_CRAWLING = 400007,
     /**Đang cập nhật dữ liệu sản phẩm*/
     LT_BADREQUEST_PRODUCT_CRAWLING = 400008,

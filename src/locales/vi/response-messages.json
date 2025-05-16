@@ -1,6 +1,6 @@
 {
     "response": {
-        "codes":{
+        "codes": {
             "100": "Yêu cầu đang được xử lý.",
             "101": "Đang chuyển giao thức.",
             "102": "Đang xử lý.",
@@ -93,8 +93,8 @@
             "400004": "Sai dữ liệu giới hạn.",
             "400005": "Sai dữ liệu danh mục.",
             "400006": "Sai dữ liệu sản phẩm.",
-            "400007": "Đang cập nhật dữ liệu user.",
-            "400008": "Đang cập nhật dữ liệu sản phẩm.",
+            "400007": "Hệ thống đang cập nhật dữ liệu user.",
+            "400008": "Hệ thống đang cập nhật dữ liệu sản phẩm.",
             "400009": "Dữ liệu SNS không hợp lệ. Vui lòng cập nhật lại thông tin SNS.",
             "400010": "Yêu cầu sourcing đã hoàn thành.",
             "400011": "Sản phẩm chưa có chính sách vận chuyển. Vui lòng thêm chính sách vận chuyển.",
@@ -108,9 +108,13 @@
             "409000": "Xung đột dữ liệu.",
             "409001": "User đã tồn tại.",
             "409002": "Bạn đã tạo yêu cầu.",
-            "409003": "Bạn không thể tạo yêu cầu sản phẩm ứng vì sản phẩm đã được bán chung."
+            "409003": "Bạn không thể tạo yêu cầu sản phẩm ứng vì sản phẩm đã được bán chung.",
+            "409004": "Đường dẫn không hợp lệ.",
+            "409005": "Nickname đã tồn tại.",
+            "400012": "Đường dẫn không hợp lệ.",
+            "400013": "Địa chỉ không khả dụng (bao gồm cả những từ bị cấm)."
         },
-        "messages":{
+        "messages": {
             "login-success": "Đăng nhập thành công.",
             "login-fail": "Đăng nhập thất bại."
         }
