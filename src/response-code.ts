@@ -169,6 +169,10 @@ export enum HttpStatusCode {
     LT_CONFLICT_PATH = 409004,
     /**nickname đã tồn tại*/
     LT_CONFLICT_NICKNAME = 409005,
+    /**Đã tồn tại chính sách*/
+    LT_CONFLICT_SHIPPING_POLICY = 409006,
+    /**Đang có sản phẩm sử dụng chính sách này. Vui lòng đổi các sản phẩm sang chính sách khác.*/
+    LT_CONFLICT_SHIPPING_POLICY_DELETE = 409007,
 
 }
 

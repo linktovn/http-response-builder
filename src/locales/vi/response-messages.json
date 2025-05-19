@@ -111,6 +111,8 @@
             "409003": "Bạn không thể tạo yêu cầu sản phẩm ứng vì sản phẩm đã được bán chung.",
             "409004": "Đường dẫn không hợp lệ.",
             "409005": "Nickname đã tồn tại.",
+            "409006": "Đã tồn tại chính sách.",
+            "409007": "Đang có sản phẩm sử dụng chính sách này. Vui lòng đổi các sản phẩm sang chính sách khác.",
             "400012": "Đường dẫn không hợp lệ.",
             "400013": "Địa chỉ không khả dụng (bao gồm cả những từ bị cấm)."
         },

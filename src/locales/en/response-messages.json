@@ -111,6 +111,8 @@
             "409003": "Cannot create request for this product as it is already on group sale.",
             "409004": "Invalid path.",
             "409005": "Nickname already exists.",
+            "409006": "Policy already exists.",
+            "409007": "There are products using this policy. Please switch products to another policy before deleting.",
             "400012": "Invalid path.",
             "400013": "Address is not available (including forbidden words)."
         },
