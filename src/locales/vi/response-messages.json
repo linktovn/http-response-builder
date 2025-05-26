@@ -114,7 +114,10 @@
             "409006": "Đã tồn tại chính sách.",
             "409007": "Đang có sản phẩm sử dụng chính sách này. Vui lòng đổi các sản phẩm sang chính sách khác.",
             "400012": "Đường dẫn không hợp lệ.",
-            "400013": "Địa chỉ không khả dụng (bao gồm cả những từ bị cấm)."
+            "400013": "Địa chỉ không khả dụng (bao gồm cả những từ bị cấm).",
+            "400014": "Có sản phẩm có số lượng hàng tồn kho không đủ. Vui lòng kiểm tra lại số lượng sản phẩm và thử lại.",
+            "400015": "Bạn không có đủ điểm quy đổi.",
+            "404007": "Không có dữ liệu về chính sách bán hàng."
         },
         "messages": {
             "login-success": "Đăng nhập thành công.",

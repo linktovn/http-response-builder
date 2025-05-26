@@ -114,7 +114,10 @@
             "409006": "Policy already exists.",
             "409007": "There are products using this policy. Please switch products to another policy before deleting.",
             "400012": "Invalid path.",
-            "400013": "Address is not available (including forbidden words)."
+            "400013": "Address is not available (including forbidden words).",
+            "400014": "There are products with insufficient stock. Please check the product quantity and try again.",
+            "400015": "You do not have enough points.",
+            "404007": "Sale policy data not found."
         },
         "messages": {
             "login-success": "Login success.",

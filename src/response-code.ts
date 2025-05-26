@@ -141,6 +141,10 @@ export enum HttpStatusCode {
     LT_BADREQUEST_PATH_INVALID = 400012,
     /**Địa chỉ không khả dụng. (bao gồm cả những từ bị cấm)*/
     LT_BADREQUEST_PATH_FORBIDDEN = 400013,
+    /**Có sản phẩm có số lượng hàng tồn kho không đủ. Vui lòng kiểm tra lại số lượng sản phẩm và thử lại.*/
+    LT_BADREQUEST_PRODUCT_INSUFFICIENT_STOCK = 400014,
+    /**Bạn không có đủ điểm quy đổi*/
+    LT_BADREQUEST_POINT_INSUFFICIENT = 400015,
 
 
     LT_NOTFOUND = 404000,
@@ -156,6 +160,8 @@ export enum HttpStatusCode {
     LT_NOTFOUND_SHIPPING_POLICY = 404005,
     /** Không tìm thấy danh mục */
     LT_NOTFOUND_CATEGORY = 404006,
+    /**Không có dữ liệu về chính sách bán hàng.*/
+    LT_NOTFOUND_SALE_POLICY = 404007,
     
     
     LT_CONFLICT = 409000,
