@@ -109,7 +109,7 @@
             "409001": "User already exists.",
             "409002": "You have already created a request.",
             "409003": "Cannot create request for this product as it is already on group sale.",
-            "409004": "Invalid path.",
+            "409004": "Domain already exists.",
             "409005": "Nickname already exists.",
             "409006": "Policy already exists.",
             "409007": "There are products using this policy. Please switch products to another policy before deleting.",
@@ -117,7 +117,8 @@
             "400013": "Address is not available (including forbidden words).",
             "400014": "There are products with insufficient stock. Please check the product quantity and try again.",
             "400015": "You do not have enough points.",
-            "404007": "Sale policy data not found."
+            "404007": "Sale policy data not found.",
+            "404008": "There is no product \"prompt\", please create a \"prompt\", for the product"
         },
         "messages": {
             "login-success": "Login success.",

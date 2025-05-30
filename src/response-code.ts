@@ -162,6 +162,8 @@ export enum HttpStatusCode {
     LT_NOTFOUND_CATEGORY = 404006,
     /**Không có dữ liệu về chính sách bán hàng.*/
     LT_NOTFOUND_SALE_POLICY = 404007,
+    /**Chưa có prompt sản phẩm, vui lòng tạo một prompt cho sản phẩm*/
+    LT_NOTFOUND_PRODUCT_PROMPT = 404008,
     
     
     LT_CONFLICT = 409000,
@@ -171,7 +173,7 @@ export enum HttpStatusCode {
     LT_CONFLICT_SOURCING_REQUEST = 409002,
     /** Bạn không thể tạo yêu cầu sản phẩm ứng vì sản phẩm đã được bán chung */
     LT_CONFLICT_MATCHING_CONTRACT_DEAL = 409003,
-    /**Đường dẫn không hợp lệ*/
+    /**Domain đã tồn tại*/
     LT_CONFLICT_PATH = 409004,
     /**nickname đã tồn tại*/
     LT_CONFLICT_NICKNAME = 409005,
