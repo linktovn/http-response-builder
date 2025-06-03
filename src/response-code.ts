@@ -145,7 +145,8 @@ export enum HttpStatusCode {
     LT_BADREQUEST_PRODUCT_INSUFFICIENT_STOCK = 400014,
     /**Bạn không có đủ điểm quy đổi*/
     LT_BADREQUEST_POINT_INSUFFICIENT = 400015,
-
+    /**Không hỗ trợ phân tích bài viết này*/
+    LT_BAD_REQUEST_ARTICLE_NOT_SUPPORTED = 400016,
 
     LT_NOTFOUND = 404000,
     /**Không tìm thấy user*/

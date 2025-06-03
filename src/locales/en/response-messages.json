@@ -118,7 +118,8 @@
             "400014": "There are products with insufficient stock. Please check the product quantity and try again.",
             "400015": "You do not have enough points.",
             "404007": "Sale policy data not found.",
-            "404008": "There is no product \"prompt\", please create a \"prompt\", for the product"
+            "404008": "There is no product \"prompt\", please create a \"prompt\", for the product",
+            "400016": "This article is not supported. Please select an article on facebook, instagram, tiktok, youtube."
         },
         "messages": {
             "login-success": "Login success.",

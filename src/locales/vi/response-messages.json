@@ -118,7 +118,8 @@
             "400014": "Có sản phẩm có số lượng hàng tồn kho không đủ. Vui lòng kiểm tra lại số lượng sản phẩm và thử lại.",
             "400015": "Bạn không có đủ điểm quy đổi.",
             "404007": "Không có dữ liệu về chính sách bán hàng.",
-            "404008": "Chưa có \"prompt\" sản phẩm, vui lòng tạo một \"prompt\" cho sản phẩm"
+            "404008": "Chưa có \"prompt\" sản phẩm, vui lòng tạo một \"prompt\" cho sản phẩm",
+            "400016": "Không hỗ trợ phân tích bài viết này. Vui lòng chọn bài viết trên các nền tảng facebook, instagram, tiktok, youtube để phân tích."
         },
         "messages": {
             "login-success": "Đăng nhập thành công.",
