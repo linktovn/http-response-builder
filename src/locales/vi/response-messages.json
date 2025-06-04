@@ -120,7 +120,10 @@
             "404007": "Không có dữ liệu về chính sách bán hàng.",
             "404008": "Chưa có \"prompt\" sản phẩm, vui lòng tạo một \"prompt\" cho sản phẩm",
             "400016": "Không hỗ trợ phân tích bài viết này. Vui lòng chọn bài viết trên các nền tảng facebook, instagram, tiktok, youtube để phân tích.",
-            "400017": "Sản phẩm không còn được bán."
+            "400017": "Sản phẩm không còn được bán.",
+            "403001": "Bạn không có quyền truy cập.",
+            "403002": "Token không có quyền truy cập.",
+            "205001": "Access token hến hạn, cần được cấp lại mới"
         },
         "messages": {
             "login-success": "Đăng nhập thành công.",

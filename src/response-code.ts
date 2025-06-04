@@ -186,6 +186,15 @@ export enum HttpStatusCode {
     /**Đang có sản phẩm sử dụng chính sách này. Vui lòng đổi các sản phẩm sang chính sách khác.*/
     LT_CONFLICT_SHIPPING_POLICY_DELETE = 409007,
 
+    /**Bạn không có quyền truy cập*/
+    LT_FORBIDDEN_ACCESS = 403001,
+    /**Token không có quyền truy cập*/
+    LT_FORBIDDEN_ACCESS_TOKEN = 403002,
+
+    /**Access token hến hạn, cần được cấp lại mới*/
+    LT_RESET_CONTENT_TOKEN = 205001,
+
+
 }
 
 export function getEnumKeyByValue<T extends { [key: string]: any }>(

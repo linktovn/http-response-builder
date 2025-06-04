@@ -120,7 +120,10 @@
             "404007": "Sale policy data not found.",
             "404008": "There is no product \"prompt\", please create a \"prompt\", for the product",
             "400016": "This article is not supported. Please select an article on facebook, instagram, tiktok, youtube.",
-            "400017": "Product is not for sale."
+            "400017": "Product is not for sale.",
+            "403001": "Access denied.",
+            "403002": "Token expired.",
+            "205001": "Access token expired, please refresh."
         },
         "messages": {
             "login-success": "Login success.",
