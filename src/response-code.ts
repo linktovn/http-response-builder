@@ -147,7 +147,10 @@ export enum HttpStatusCode {
     LT_BADREQUEST_POINT_INSUFFICIENT = 400015,
     /**Không hỗ trợ phân tích bài viết này*/
     LT_BAD_REQUEST_ARTICLE_NOT_SUPPORTED = 400016,
+    /**Sản phẩm không còn được bán.*/
+    LT_BADREQUEST_PRODUCT_NOT_ON_SALE = 400017,
 
+    
     LT_NOTFOUND = 404000,
     /**Không tìm thấy user*/
     LT_NOTFOUND_USER = 404001,

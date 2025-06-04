@@ -119,7 +119,8 @@
             "400015": "You do not have enough points.",
             "404007": "Sale policy data not found.",
             "404008": "There is no product \"prompt\", please create a \"prompt\", for the product",
-            "400016": "This article is not supported. Please select an article on facebook, instagram, tiktok, youtube."
+            "400016": "This article is not supported. Please select an article on facebook, instagram, tiktok, youtube.",
+            "400017": "Product is not for sale."
         },
         "messages": {
             "login-success": "Login success.",
