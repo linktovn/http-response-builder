@@ -123,7 +123,8 @@
             "400017": "Product is not for sale.",
             "403001": "Access denied.",
             "403002": "Token expired.",
-            "205001": "Access token expired, please refresh."
+            "205001": "Access token expired, please refresh.",
+            "400020": "This warehouse is already in use."
         },
         "messages": {
             "login-success": "Login success.",

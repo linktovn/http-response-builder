@@ -123,7 +123,8 @@
             "400017": "Sản phẩm không còn được bán.",
             "403001": "Bạn không có quyền truy cập.",
             "403002": "Token không có quyền truy cập.",
-            "205001": "Access token hến hạn, cần được cấp lại mới"
+            "205001": "Access token hến hạn, cần được cấp lại mới",
+            "400020": "Kho hàng này đang được sử dụng"
         },
         "messages": {
             "login-success": "Đăng nhập thành công.",
