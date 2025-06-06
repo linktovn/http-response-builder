@@ -125,7 +125,8 @@
             "403002": "Token không có quyền truy cập.",
             "205001": "Access token hến hạn, cần được cấp lại mới",
             "400020": "Kho hàng này đang được sử dụng",
-            "400021": "Bạn chưa cài đặt hoa hồng bán lại của sản, vui lòng tạo yêu cầu mới"
+            "400021": "Bạn chưa cài đặt hoa hồng bán lại của sản, vui lòng tạo yêu cầu mới",
+            "400022": "Vui lòng chọn seller"
         },
         "messages": {
             "login-success": "Đăng nhập thành công.",

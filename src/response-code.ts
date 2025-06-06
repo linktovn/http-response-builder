@@ -156,6 +156,8 @@ export enum HttpStatusCode {
   LT_BADREQUEST_WAREHOUSE_USED = 400020,
   /**Bạn chưa cài đặt hoa hồng bán lại của sản. vui lòng tạo yêu cầu mới*/
   LT_BADREQUEST_RESELL_COMMISSION_NOT_SET = 400021,
+  /**Vui lòng chọn seller*/
+  LT_BADREQUEST_SELLER_NOT_SELECTED = 400022,
 
   LT_NOTFOUND = 404000,
   /**Không tìm thấy user*/
