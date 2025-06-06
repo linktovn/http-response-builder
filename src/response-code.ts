@@ -214,7 +214,13 @@ export enum HttpStatusCode {
   LT_BADREQUEST_GOOGLE_VERTEX_CANCELLED = 499002,
 
   /**Unknown error*/
-  LT_UNKNOWN_ERROR = 500001,
+  LT_UNKNOWN_GOOGLE_VERTEX_ERROR = 500001,
+
+  /**Unavailable error*/
+  LT_UNAVAILABLE_GOOGLE_VERTEX_ERROR = 503001,
+
+  /**Deadline exceeded*/
+  LT_DEADLINE_GOOGLE_VERTEX_EXCEEDED = 504001,
 }
 
 export function getEnumKeyByValue<T extends { [key: string]: any }>(

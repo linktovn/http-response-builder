@@ -127,7 +127,16 @@
             "400020": "This warehouse is already in use.",
             "400021": "Resell commission for this product is not set. Please set the resell commission.",
             "400022": "Please select a seller.",
-            "400023": "Please verify OTP."
+            "400023": "Please verify OTP.",
+            "500001": "Server error due to overload or dependency failure.",
+            "503001": "Service is temporarily unavailable",
+            "504001": "The client sets a deadline shorter than the server's default deadline (10 minutes), and the request didn't finish within the client-provided deadline.",
+            "499001": "Request is cancelled by the client.",
+            "429001": "Depending on the error message.",
+            "404009": "No valid object is found from the designated URL.",
+            "403003": "Client doesn't have sufficient permission to call the API.",
+            "400018": "Request fails API validation, you tried to access a model that requires allowlisting",
+            "400019": "Request fails API validation, is disallowed by the organization's policy."
         },
         "messages": {
             "login-success": "Login success.",

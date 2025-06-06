@@ -127,7 +127,16 @@
             "400020": "Kho hàng này đang được sử dụng",
             "400021": "Bạn chưa cài đặt hoa hồng bán lại của sản phẩm, vui lòng tạo yêu cầu mới",
             "400022": "Vui lòng chọn seller",
-            "400023": "Chưa xác thực otp"
+            "400023": "Chưa xác thực otp",
+            "500001": "Lỗi máy chủ do tải quá cao hoặc phụ thuộc không thành công.",
+            "503001": "Dịch vụ tạm thời không khả dụng",
+            "504001": "Client đặt thời hạn ngắn hơn thời hạn mặc định của server (10 phút), và yêu cầu không hoàn thành trong thời hạn cung cấp bởi client.",
+            "499001": "Yêu cầu bị hủy bỏ bởi client.",
+            "429001": "Tùy thuộc vào thông báo lỗi.",
+            "404009": "Không tìm thấy đối tượng hợp lệ từ URL được chỉ định.",
+            "403003": "Client không có quyền đủ để gọi API.",
+            "400018": "Yêu cầu không thành công API validation, bạn đã cố gắng truy cập một mô hình yêu cầu allowlisting",
+            "400019": "Yêu cầu không thành công API validation, được cấm bởi chính sách của tổ chức."
         },
         "messages": {
             "login-success": "Đăng nhập thành công.",
