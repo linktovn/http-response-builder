@@ -158,6 +158,8 @@ export enum HttpStatusCode {
   LT_BADREQUEST_RESELL_COMMISSION_NOT_SET = 400021,
   /**Vui lòng chọn seller*/
   LT_BADREQUEST_SELLER_NOT_SELECTED = 400022,
+  /**Chưa xác thực otp*/
+  LT_BADREQUEST_NOT_VERIFY_OTP = 400023,
 
   LT_NOTFOUND = 404000,
   /**Không tìm thấy user*/

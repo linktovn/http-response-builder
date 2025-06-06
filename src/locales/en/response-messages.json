@@ -126,7 +126,8 @@
             "205001": "Access token expired, please refresh.",
             "400020": "This warehouse is already in use.",
             "400021": "Resell commission for this product is not set. Please set the resell commission.",
-            "400022": "Please select a seller."
+            "400022": "Please select a seller.",
+            "400023": "Please verify OTP."
         },
         "messages": {
             "login-success": "Login success.",
