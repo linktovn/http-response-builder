@@ -124,7 +124,8 @@
             "403001": "Access denied.",
             "403002": "Token expired.",
             "205001": "Access token expired, please refresh.",
-            "400020": "This warehouse is already in use."
+            "400020": "This warehouse is already in use.",
+            "400021": "Resell commission for this product is not set. Please set the resell commission."
         },
         "messages": {
             "login-success": "Login success.",

@@ -154,6 +154,8 @@ export enum HttpStatusCode {
   LT_BADREQUEST_GOOGLE_VERTEX_FAILED_PRECONDITION = 400019,
   /**Kho hàng này đang được sử dụng */
   LT_BADREQUEST_WAREHOUSE_USED = 400020,
+  /**Bạn chưa cài đặt hoa hồng bán lại của sản. vui lòng tạo yêu cầu mới*/
+  LT_BADREQUEST_RESELL_COMMISSION_NOT_SET = 400021,
 
   LT_NOTFOUND = 404000,
   /**Không tìm thấy user*/
