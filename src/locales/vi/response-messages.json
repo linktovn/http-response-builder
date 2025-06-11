@@ -136,7 +136,8 @@
             "404009": "Không tìm thấy đối tượng hợp lệ từ URL được chỉ định.",
             "403003": "Client không có quyền đủ để gọi API.",
             "400018": "Yêu cầu không thành công API validation, bạn đã cố gắng truy cập một mô hình yêu cầu allowlisting",
-            "400019": "Yêu cầu không thành công API validation, được cấm bởi chính sách của tổ chức."
+            "400019": "Yêu cầu không thành công API validation, được cấm bởi chính sách của tổ chức.",
+            "400024": "Sourcing request đã hoàn thành, không thể cập nhật thêm"
         },
         "messages": {
             "login-success": "Đăng nhập thành công.",

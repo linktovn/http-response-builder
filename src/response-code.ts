@@ -160,6 +160,8 @@ export enum HttpStatusCode {
   LT_BADREQUEST_SELLER_NOT_SELECTED = 400022,
   /**Chưa xác thực otp*/
   LT_BADREQUEST_NOT_VERIFY_OTP = 400023,
+  /**Sourcing request đã hoàn thành, không thể cập nhật thêm*/
+  LT_BADREQUEST_SOURCING_REQUEST_COMPLETED = 400024,
 
   LT_NOTFOUND = 404000,
   /**Không tìm thấy user*/

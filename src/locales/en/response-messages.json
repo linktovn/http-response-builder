@@ -136,7 +136,8 @@
             "404009": "No valid object is found from the designated URL.",
             "403003": "Client doesn't have sufficient permission to call the API.",
             "400018": "Request fails API validation, you tried to access a model that requires allowlisting",
-            "400019": "Request fails API validation, is disallowed by the organization's policy."
+            "400019": "Request fails API validation, is disallowed by the organization's policy.",
+            "400024": "Sourcing request already completed, cannot update."
         },
         "messages": {
             "login-success": "Login success.",
