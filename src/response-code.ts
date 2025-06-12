@@ -164,6 +164,10 @@ export enum HttpStatusCode {
   LT_BADREQUEST_SOURCING_REQUEST_COMPLETED = 400024,
   /**URL đã hết hạn*/
   LT_BADREQUEST_URL_EXPIRED = 400025,
+  /**OTP đã hết hạn*/
+  LT_BADREQUEST_OTP_EXPIRED = 400026,
+  /**OTP không hợp lệ*/
+  LT_BADREQUEST_OTP_INVALID = 400027,
 
   LT_NOTFOUND = 404000,
   /**Không tìm thấy user*/

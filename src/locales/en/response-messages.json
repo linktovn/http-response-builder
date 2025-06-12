@@ -138,7 +138,9 @@
             "400018": "Request fails API validation, you tried to access a model that requires allowlisting",
             "400019": "Request fails API validation, is disallowed by the organization's policy.",
             "400024": "Sourcing request already completed, cannot update.",
-            "400025": "URL expired."
+            "400025": "URL expired.",
+            "400026": "OTP expired.",
+            "400027": "OTP is invalid."
         },
         "messages": {
             "login-success": "Login success.",
