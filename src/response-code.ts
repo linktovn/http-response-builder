@@ -168,6 +168,10 @@ export enum HttpStatusCode {
   LT_BADREQUEST_OTP_EXPIRED = 400026,
   /**OTP không hợp lệ*/
   LT_BADREQUEST_OTP_INVALID = 400027,
+  /**Đang có sản phẩm sử dụng chính sách này. Vui lòng đổi các sản phẩm sang chính sách khác.*/
+  LT_BADREQUEST_SHIPPING_POLICY_DELETE = 400028,
+  /**Bạn không có quyền xóa chính sách vận này*/
+  LT_BADREQUEST_SHIPPING_POLICY_DELETE_NOT_ALLOWED = 400029,
 
   LT_NOTFOUND = 404000,
   /**Không tìm thấy user*/
