@@ -192,6 +192,8 @@ export enum HttpStatusCode {
   LT_NOTFOUND_PRODUCT_PROMPT = 404008,
   /**Google Vertex AI Not Found*/
   LT_NOTFOUND_GOOGLE_VERTEX_NOT_FOUND = 404009,
+  /**Không tìm thấy vận đơn*/
+  LT_NOTFOUND_SHIPMENT = 404010,
 
   LT_CONFLICT = 409000,
   /**User đã tồn tại*/
@@ -208,6 +210,8 @@ export enum HttpStatusCode {
   LT_CONFLICT_SHIPPING_POLICY = 409006,
   /**Đang có sản phẩm sử dụng chính sách này. Vui lòng đổi các sản phẩm sang chính sách khác.*/
   LT_CONFLICT_SHIPPING_POLICY_DELETE = 409007,
+  /**This order cannot be processed.*/
+  LT_CONFLICT_ORDER_NOT_PROCESSED = 409008,
 
   /**Bạn không có quyền truy cập*/
   LT_FORBIDDEN_ACCESS = 403001,

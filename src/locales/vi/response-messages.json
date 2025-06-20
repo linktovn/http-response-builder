@@ -141,7 +141,9 @@
             "400025": "URL đã hết hạn",
             "400026": "OTP đã hết hạn",
             "400027": "OTP không hợp lệ",
-            "400028": "Đang có sản phẩm sử dụng chính sách này. Vui lòng đổi các sản phẩm sang chính sách khác."
+            "400028": "Đang có sản phẩm sử dụng chính sách này. Vui lòng đổi các sản phẩm sang chính sách khác.",
+            "409008": "Không thể xử lý đơn hàng này.",
+            "404010": "Không tìm thấy vận đơn."
         },
         "messages": {
             "login-success": "Đăng nhập thành công.",

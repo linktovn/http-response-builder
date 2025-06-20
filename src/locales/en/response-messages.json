@@ -141,7 +141,9 @@
             "400025": "URL expired.",
             "400026": "OTP expired.",
             "400027": "OTP is invalid.",
-            "400028": "There are products using this policy. Please switch products to another policy before deleting."
+            "400028": "There are products using this policy. Please switch products to another policy before deleting.",
+            "409008": "This order cannot be processed.",
+            "404010": "Shipment information not found."
         },
         "messages": {
             "login-success": "Login success.",
