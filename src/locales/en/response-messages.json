@@ -143,7 +143,9 @@
             "400027": "OTP is invalid.",
             "400028": "There are products using this policy. Please switch products to another policy before deleting.",
             "409008": "This order cannot be processed.",
-            "404010": "Shipment information not found."
+            "404010": "Shipment information not found.",
+            "400029": "Warehouse already exists.",
+            "404031": "Warehouse not found."
         },
         "messages": {
             "login-success": "Login success.",

@@ -143,7 +143,9 @@
             "400027": "OTP không hợp lệ",
             "400028": "Đang có sản phẩm sử dụng chính sách này. Vui lòng đổi các sản phẩm sang chính sách khác.",
             "409008": "Không thể xử lý đơn hàng này.",
-            "404010": "Không tìm thấy vận đơn."
+            "404010": "Không tìm thấy vận đơn.",
+            "400029": "Kho hàng đã tồn tại",
+            "404031": "Không tìm thấy kho hàng"
         },
         "messages": {
             "login-success": "Đăng nhập thành công.",
