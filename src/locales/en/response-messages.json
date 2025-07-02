@@ -145,7 +145,8 @@
             "409008": "This order cannot be processed.",
             "404010": "Shipment information not found.",
             "400029": "Warehouse already exists.",
-            "404031": "Warehouse not found."
+            "404031": "Warehouse not found.",
+            "404032": "No data."
         },
         "messages": {
             "login-success": "Login success.",

@@ -216,6 +216,8 @@ export enum HttpStatusCode {
   LT_CONFLICT_ORDER_NOT_PROCESSED = 409008,
   /**Không tìm thấy kho hàng*/
   LT_NOTFOUND_WAREHOUSE = 404031,
+  /**Không có dữ liệu*/
+  LT_NOTFOUND_DATA = 404032,
 
   /**Bạn không có quyền truy cập*/
   LT_FORBIDDEN_ACCESS = 403001,

@@ -145,7 +145,8 @@
             "409008": "Không thể xử lý đơn hàng này.",
             "404010": "Không tìm thấy vận đơn.",
             "400029": "Kho hàng đã tồn tại",
-            "404031": "Không tìm thấy kho hàng"
+            "404031": "Không tìm thấy kho hàng",
+            "404032": "Không có dữ liệu"
         },
         "messages": {
             "login-success": "Đăng nhập thành công.",
