@@ -146,7 +146,8 @@
             "404010": "Không tìm thấy vận đơn.",
             "400029": "Kho hàng đã tồn tại",
             "404031": "Không tìm thấy kho hàng",
-            "404032": "Không có dữ liệu"
+            "404032": "Không có dữ liệu",
+            "400031": "Đang có sản phẩm sử dụng địa chỉ trả hàng này. Vui lòng đổi các sản phẩm sang địa chỉ trả hàng khác."
         },
         "messages": {
             "login-success": "Đăng nhập thành công.",

@@ -146,7 +146,8 @@
             "404010": "Shipment information not found.",
             "400029": "Warehouse already exists.",
             "404031": "Warehouse not found.",
-            "404032": "No data."
+            "404032": "No data.",
+            "400031": "This address is used by a product. Please switch the product to another address before deleting."
         },
         "messages": {
             "login-success": "Login success.",

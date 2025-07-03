@@ -174,6 +174,8 @@ export enum HttpStatusCode {
   LT_BADREQUEST_SHIPPING_POLICY_DELETE_NOT_ALLOWED = 400029,
   /**Kho hàng đã tồn tại*/
   LT_BADREQUEST_WAREHOUSE_EXIST = 400030,
+  /** Đang có sản phẩm sử dụng địa chỉ trả hàng này. Vui lòng đổi các sản phẩm sang địa chỉ trả hàng khác. */
+  LT_BADREQUEST_WAREHOUSE_ADDRESS_USED = 400031,
 
   LT_NOTFOUND = 404000,
   /**Không tìm thấy user*/
@@ -196,6 +198,10 @@ export enum HttpStatusCode {
   LT_NOTFOUND_GOOGLE_VERTEX_NOT_FOUND = 404009,
   /**Không tìm thấy vận đơn*/
   LT_NOTFOUND_SHIPMENT = 404010,
+  /**Không tìm thấy kho hàng*/
+  LT_NOTFOUND_WAREHOUSE = 404031,
+  /**Không có dữ liệu*/
+  LT_NOTFOUND_DATA = 404032,
 
   LT_CONFLICT = 409000,
   /**User đã tồn tại*/
@@ -214,10 +220,6 @@ export enum HttpStatusCode {
   LT_CONFLICT_SHIPPING_POLICY_DELETE = 409007,
   /**This order cannot be processed.*/
   LT_CONFLICT_ORDER_NOT_PROCESSED = 409008,
-  /**Không tìm thấy kho hàng*/
-  LT_NOTFOUND_WAREHOUSE = 404031,
-  /**Không có dữ liệu*/
-  LT_NOTFOUND_DATA = 404032,
 
   /**Bạn không có quyền truy cập*/
   LT_FORBIDDEN_ACCESS = 403001,
