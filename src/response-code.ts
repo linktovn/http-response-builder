@@ -221,6 +221,9 @@ export enum HttpStatusCode {
   /**This order cannot be processed.*/
   LT_CONFLICT_ORDER_NOT_PROCESSED = 409008,
 
+  /**Sản phẩm đã hết hàng*/
+  LT_UNPROCESSABLE_ENTITY_OUT_OF_STOCK = 422032,
+
   /**Bạn không có quyền truy cập*/
   LT_FORBIDDEN_ACCESS = 403001,
   /**Token không có quyền truy cập*/
