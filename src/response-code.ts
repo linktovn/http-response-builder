@@ -220,6 +220,8 @@ export enum HttpStatusCode {
   LT_CONFLICT_SHIPPING_POLICY_DELETE = 409007,
   /**This order cannot be processed.*/
   LT_CONFLICT_ORDER_NOT_PROCESSED = 409008,
+  /**Bán chung đang diển ra. Bạn không thể cập nhật thời gian bán chung*/
+  LT_CONFLICT_MATCHING_CONTRACT_DEAL_UPDATE_TIME = 409009,
 
   /**Sản phẩm đã hết hàng*/
   LT_UNPROCESSABLE_ENTITY_OUT_OF_STOCK = 422032,
@@ -234,6 +236,8 @@ export enum HttpStatusCode {
   /**Access token hến hạn, cần được cấp lại mới*/
   LT_RESET_CONTENT_TOKEN = 205001,
 
+  /** Quá nhiều yêu cầu sử lý, vui lòng thử lại sau ít phút*/
+  LT_TOO_MANY_REQUESTS = 429000,
   /**Google Vertex AI Resource Exhausted*/
   LT_TOO_MANY_REQUESTS_GOOGLE_VERTEX_RESOURCE_EXHAUSTED = 429001,
 

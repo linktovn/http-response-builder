@@ -148,7 +148,9 @@
             "404031": "Warehouse not found.",
             "404032": "No data.",
             "400031": "This address is used by a product. Please switch the product to another address before deleting.",
-            "422032": "This product is out of stock."
+            "422032": "This product is out of stock.",
+            "409009": "Group sale is ongoing. You cannot update the group sale time.",
+            "429000": "Too many requests, please try again later."
         },
         "messages": {
             "login-success": "Login success.",

@@ -148,7 +148,9 @@
             "404031": "Không tìm thấy kho hàng",
             "404032": "Không có dữ liệu",
             "400031": "Đang có sản phẩm sử dụng địa chỉ trả hàng này. Vui lòng đổi các sản phẩm sang địa chỉ trả hàng khác.",
-            "422032": "Sản phẩm đã hết hàng"
+            "422032": "Sản phẩm đã hết hàng",
+            "409009": "Bán chung đang diển ra. Bạn không thể cập nhật thời gian bán chung",
+            "429000": "Quá nhiều yêu cầu sử lý, vui lòng thử lại sau ít phút"
         },
         "messages": {
             "login-success": "Đăng nhập thành công.",
