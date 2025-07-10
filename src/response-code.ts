@@ -176,6 +176,8 @@ export enum HttpStatusCode {
   LT_BADREQUEST_WAREHOUSE_EXIST = 400030,
   /** Đang có sản phẩm sử dụng địa chỉ trả hàng này. Vui lòng đổi các sản phẩm sang địa chỉ trả hàng khác. */
   LT_BADREQUEST_WAREHOUSE_ADDRESS_USED = 400031,
+  /**Bạn không có đủ số dư trong ví*/
+  LT_BADREQUEST_WALLET_INSUFFICIENT = 400032,
 
   LT_NOTFOUND = 404000,
   /**Không tìm thấy user*/

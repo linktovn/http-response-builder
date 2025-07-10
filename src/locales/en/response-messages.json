@@ -150,7 +150,8 @@
             "400031": "This address is used by a product. Please switch the product to another address before deleting.",
             "422032": "This product is out of stock.",
             "409009": "Group sale is ongoing. You cannot update the group sale time.",
-            "429000": "Too many requests, please try again later."
+            "429000": "Too many requests, please try again later.",
+            "400032": "You do not have enough balance in your wallet."
         },
         "messages": {
             "login-success": "Login success.",
