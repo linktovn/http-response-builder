@@ -178,6 +178,12 @@ export enum HttpStatusCode {
   LT_BADREQUEST_WAREHOUSE_ADDRESS_USED = 400031,
   /**Bạn không có đủ số dư trong ví*/
   LT_BADREQUEST_WALLET_INSUFFICIENT = 400032,
+  /**Không thể xóa*/
+  LT_BADREQUEST_CANNOT_DELETE = 400033,
+  /**Đang diển ra */
+  LT_BADREQUEST_ADVERTISEMENT_CANNOT_DELETE = 400034,
+  /**Số lượng banner quản cáo đã đạt giới hạn*/
+  LT_BADREQUEST_ADVERTISEMENT_LIMIT = 400035,
 
   LT_NOTFOUND = 404000,
   /**Không tìm thấy user*/
@@ -204,6 +210,8 @@ export enum HttpStatusCode {
   LT_NOTFOUND_WAREHOUSE = 404031,
   /**Không có dữ liệu*/
   LT_NOTFOUND_DATA = 404032,
+  /**Không tìm thấy quảng cáo*/
+  LT_NOTFOUND_ADVERTISEMENT = 404033,
 
   LT_CONFLICT = 409000,
   /**User đã tồn tại*/
@@ -224,6 +232,8 @@ export enum HttpStatusCode {
   LT_CONFLICT_ORDER_NOT_PROCESSED = 409008,
   /**Bán chung đang diển ra. Bạn không thể cập nhật thời gian bán chung*/
   LT_CONFLICT_MATCHING_CONTRACT_DEAL_UPDATE_TIME = 409009,
+  /**Đã đăng đồng ý quảng cáo với celeb*/
+  LT_CONFLICT_ADVERTISEMENT_AGREED = 4090010,
 
   /**Sản phẩm đã hết hàng*/
   LT_UNPROCESSABLE_ENTITY_OUT_OF_STOCK = 422032,

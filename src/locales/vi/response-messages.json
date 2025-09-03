@@ -151,7 +151,12 @@
             "422032": "Sản phẩm đã hết hàng",
             "409009": "Bán chung đang diển ra. Bạn không thể cập nhật thời gian bán chung",
             "429000": "Quá nhiều yêu cầu sử lý, vui lòng thử lại sau ít phút",
-            "400032": "Bạn không có đủ số dư trong ví"
+            "400032": "Bạn không có đủ số dư trong ví",
+            "400033": "Không thể xóa",
+            "400034": "Đang diển ra",
+            "400035": "Số lượng banner quản cáo đã đạt giới hạn",
+            "404033": "Không tìm thấy quảng cáo",
+            "4090010": "Đã tạo hợp đồng quảng cáo với celeb"
         },
         "messages": {
             "login-success": "Đăng nhập thành công.",

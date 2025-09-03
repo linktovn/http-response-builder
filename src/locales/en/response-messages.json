@@ -151,7 +151,12 @@
             "422032": "This product is out of stock.",
             "409009": "Group sale is ongoing. You cannot update the group sale time.",
             "429000": "Too many requests, please try again later.",
-            "400032": "You do not have enough balance in your wallet."
+            "400032": "You do not have enough balance in your wallet.",
+            "400033": "Cannot delete.",
+            "400034": "Ongoing.",
+            "400035": "Banner advertisement quantity has reached the limit.",
+            "404033": "Advertisement not found.",
+            "4090010": "This celebrity and advertisement agreement already exists."
         },
         "messages": {
             "login-success": "Login success.",
