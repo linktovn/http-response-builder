@@ -184,6 +184,10 @@ export enum HttpStatusCode {
   LT_BADREQUEST_ADVERTISEMENT_CANNOT_DELETE = 400034,
   /**Số lượng banner quản cáo đã đạt giới hạn*/
   LT_BADREQUEST_ADVERTISEMENT_LIMIT = 400035,
+  /**Bạn đã vượt quá số lượng yêu cầu tìm nguồn hàng tối đa có thể thực hiện hôm nay.*/
+  LT_BADREQUEST_SOURCING_REQUEST_LIMITED = 400036,
+  /**Không thể yêu cầu lại mặt hàng này trong vòng 7 ngày.*/
+  LT_BADREQUEST_SOURCING_REQUEST_CANNOT_REQUEST_AGAIN_IN_7_DAYS = 400037,
 
   LT_NOTFOUND = 404000,
   /**Không tìm thấy user*/

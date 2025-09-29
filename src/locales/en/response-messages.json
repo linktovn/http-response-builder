@@ -156,7 +156,9 @@
             "400034": "Ongoing.",
             "400035": "Banner advertisement quantity has reached the limit.",
             "404033": "Advertisement not found.",
-            "4090010": "This celebrity and advertisement agreement already exists."
+            "4090010": "This celebrity and advertisement agreement already exists.",
+            "400036": "You have exceeded the maximum number of sourcing requests you can make today.",
+            "400037": "You cannot request this product again within 7 days."
         },
         "messages": {
             "login-success": "Login success.",
