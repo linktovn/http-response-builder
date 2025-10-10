@@ -158,7 +158,8 @@
             "404033": "Advertisement not found.",
             "4090010": "This celebrity and advertisement agreement already exists.",
             "400036": "You have exceeded the maximum number of sourcing requests you can make today.",
-            "400037": "You cannot request this product again within 7 days."
+            "400037": "You cannot request this product again within 7 days.",
+            "400038": "Social media data is invalid. Please contact admin to update social media data."
         },
         "messages": {
             "login-success": "Login success.",

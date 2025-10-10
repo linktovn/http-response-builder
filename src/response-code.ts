@@ -188,6 +188,8 @@ export enum HttpStatusCode {
   LT_BADREQUEST_SOURCING_REQUEST_LIMITED = 400036,
   /**Không thể yêu cầu lại mặt hàng này trong vòng 7 ngày.*/
   LT_BADREQUEST_SOURCING_REQUEST_CANNOT_REQUEST_AGAIN_IN_7_DAYS = 400037,
+  /**Dữ liệu mạng xã hội không hợp lệ. Vui lòng liên hệ admin để cập nhật thông tin mạng xã hội*/
+  LT_BADREQUEST_SOCIAL_MEDIA_DATA_INVALID = 400038,
 
   LT_NOTFOUND = 404000,
   /**Không tìm thấy user*/
