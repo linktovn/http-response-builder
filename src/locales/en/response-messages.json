@@ -153,7 +153,7 @@
             "429000": "Too many requests, please try again later.",
             "400032": "You do not have enough balance in your wallet.",
             "400033": "Cannot delete.",
-            "400034": "Ongoing.",
+            "400034": "Cannot delete this advertisement, please contact admin to process.",
             "400035": "Banner advertisement quantity of this celeb has reached the limit, please select another time or size of banner.",
             "404033": "Advertisement not found.",
             "4090010": "This celebrity and advertisement agreement already exists.",

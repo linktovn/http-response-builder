@@ -180,7 +180,7 @@ export enum HttpStatusCode {
   LT_BADREQUEST_WALLET_INSUFFICIENT = 400032,
   /**Không thể xóa*/
   LT_BADREQUEST_CANNOT_DELETE = 400033,
-  /**Đang diển ra */
+  /**Không thể xóa quảng cáo này, Vui lòng liên hệ admin để xử lý*/
   LT_BADREQUEST_ADVERTISEMENT_CANNOT_DELETE = 400034,
   /**Số lượng banner quảng cáo đã đạt giới hạn*/
   LT_BADREQUEST_ADVERTISEMENT_LIMIT = 400035,
